@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		37D5192722A81F720090FC86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D5192622A81F720090FC86 /* AppDelegate.swift */; };
-		37D5192922A81F720090FC86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D5192822A81F720090FC86 /* ViewController.swift */; };
 		37D5192C22A81F720090FC86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D5192A22A81F720090FC86 /* Main.storyboard */; };
 		37D5192E22A81F730090FC86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37D5192D22A81F730090FC86 /* Assets.xcassets */; };
 		37D5193122A81F730090FC86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D5192F22A81F730090FC86 /* LaunchScreen.storyboard */; };
+		37D5193922A828470090FC86 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D5193822A828470090FC86 /* NotesViewController.swift */; };
+		37D5193B22A82BE40090FC86 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D5193A22A82BE40090FC86 /* Note.swift */; };
+		37D5194022A82DFA0090FC86 /* NoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D5193F22A82DFA0090FC86 /* NoteController.swift */; };
+		37D5194322A831500090FC86 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D5194222A831500090FC86 /* NoteTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		37D5192322A81F720090FC86 /* QuickNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D5192622A81F720090FC86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		37D5192822A81F720090FC86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		37D5192B22A81F720090FC86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37D5192D22A81F730090FC86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37D5193022A81F730090FC86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37D5193222A81F730090FC86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37D5193822A828470090FC86 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		37D5193A22A82BE40090FC86 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		37D5193F22A82DFA0090FC86 /* NoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteController.swift; sourceTree = "<group>"; };
+		37D5194222A831500090FC86 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,57 @@
 		37D5192522A81F720090FC86 /* QuickNotes */ = {
 			isa = PBXGroup;
 			children = (
+				37D5193C22A82C290090FC86 /* Model */,
+				37D5194122A82E0C0090FC86 /* Controller */,
+				37D5193D22A82C370090FC86 /* View Controller */,
+				37D5194422A831700090FC86 /* Views */,
+				37D5193E22A82C530090FC86 /* Resources */,
+			);
+			path = QuickNotes;
+			sourceTree = "<group>";
+		};
+		37D5193C22A82C290090FC86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				37D5193A22A82BE40090FC86 /* Note.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		37D5193D22A82C370090FC86 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				37D5193822A828470090FC86 /* NotesViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		37D5193E22A82C530090FC86 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				37D5192622A81F720090FC86 /* AppDelegate.swift */,
-				37D5192822A81F720090FC86 /* ViewController.swift */,
 				37D5192A22A81F720090FC86 /* Main.storyboard */,
 				37D5192D22A81F730090FC86 /* Assets.xcassets */,
 				37D5192F22A81F730090FC86 /* LaunchScreen.storyboard */,
 				37D5193222A81F730090FC86 /* Info.plist */,
 			);
-			path = QuickNotes;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		37D5194122A82E0C0090FC86 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				37D5193F22A82DFA0090FC86 /* NoteController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		37D5194422A831700090FC86 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				37D5194222A831500090FC86 /* NoteTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37D5192922A81F720090FC86 /* ViewController.swift in Sources */,
+				37D5193922A828470090FC86 /* NotesViewController.swift in Sources */,
+				37D5194022A82DFA0090FC86 /* NoteController.swift in Sources */,
 				37D5192722A81F720090FC86 /* AppDelegate.swift in Sources */,
+				37D5194322A831500090FC86 /* NoteTableViewCell.swift in Sources */,
+				37D5193B22A82BE40090FC86 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D6VB3396MT;
-				INFOPLIST_FILE = QuickNotes/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/QuickNotes/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D6VB3396MT;
-				INFOPLIST_FILE = QuickNotes/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/QuickNotes/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
